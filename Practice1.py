@@ -63,8 +63,6 @@ def isGameOver(cur_pos):
     return cur_pos in win_loss_states
 
 def test_action(cur_pos, posible_actions, lr):
-    #print(possible_actions)
-    #print(cur_pos, q_matrix[cur_pos])
 
     if random.random() > lr:
         if max(q_matrix[cur_pos])!=0:
